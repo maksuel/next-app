@@ -2,8 +2,8 @@
 
 import Head from 'next/head'
 import Image from 'next/image'
-import Card from '../components/Card'
-import { useAppContext } from '../context/app'
+import Card from '@/components/Card'
+import { useAppContext } from '@/context/app'
 
 export default function Home() {
 	const { source } = useAppContext()

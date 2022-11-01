@@ -1,5 +1,10 @@
 import Link from 'next/link'
-import { Props } from './interfaces'
+
+interface Props {
+	href: string
+	title: string
+	description: string
+}
 
 export default function Card({ href, title, description }: Props) {
 	return (

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import AppProvider from '../context/app'
-import '../styles/globals.css'
+import AppProvider from '@/context/app'
+import '@/styles/globals.css'
 
 interface Props {
 	children: ReactNode
