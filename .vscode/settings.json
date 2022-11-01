@@ -1,4 +1,8 @@
 {
+	"files.autoSave": "onFocusChange",
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
 	"files.exclude": {
 		"node_modules": true,
 		".next": true
@@ -10,11 +14,6 @@
 	"editor.insertSpaces": false,
 	"editor.quickSuggestions": {
 		"strings": true
-	},
-
-	"files.autoSave": "onFocusChange",
-	"files.associations": {
-		"*.css": "tailwindcss"
 	},
 
 	"prettier.arrowParens": "avoid",
@@ -32,5 +31,8 @@
 	"prettier.singleQuote": true,
 	// prettier.tabWidth
 	"prettier.trailingComma": "none",
-	"prettier.useTabs": true
+	"prettier.useTabs": true,
+
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true
 }

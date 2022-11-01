@@ -1,3 +1,5 @@
+'use client'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Card from '../components/Card'
@@ -23,7 +25,7 @@ export default function Home() {
 						className="text-blue-600 hover:underline focus:underline active:underline"
 						href="https://nextjs.org"
 					>
-						Next.js!
+						Next.js 13!
 					</a>
 				</h1>
 
