@@ -1,12 +1,8 @@
-'use client'
-
 import Head from 'next/head'
 import Image from 'next/image'
 import Card from '@/components/Card'
-import { useAppContext } from '@/context/app'
 
-export default function Home() {
-	const { source } = useAppContext()
+export default function Page() {
 	return (
 		<div className="max-w-3xl px-4 mx-auto">
 			<Head>
@@ -31,7 +27,9 @@ export default function Home() {
 
 				<p className="my-16 text-2xl">
 					Comece editando{' '}
-					<code className="bg-gray-900 rounded p-3 text-lg">{source}</code>
+					<code className="bg-gray-900 rounded p-3 text-lg">
+						src/app/page.tsx
+					</code>
 				</p>
 
 				<div className="grid sm:grid-cols-2 grid-cols-1 gap-8">

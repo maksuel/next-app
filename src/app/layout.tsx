@@ -1,18 +1,15 @@
-import { ReactNode } from 'react'
-import AppProvider from '@/context/app'
 import '@/styles/globals.css'
+import { ReactNode } from 'react'
 
 interface Props {
 	children: ReactNode
 }
 
-export default function RootLayout({ children }: Props) {
+export default function Layout({ children }: Props) {
 	return (
 		<html>
 			<head></head>
-			<body className="bg-black text-white">
-				<AppProvider>{children}</AppProvider>
-			</body>
+			<body className="bg-black text-white">{children}</body>
 		</html>
 	)
 }
