@@ -1,0 +1,30 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"hostRequirements": {
+		"cpus": 4
+	},
+	"waitFor": "onCreateCommand",
+	"updateContentCommand": "npm install && npm run build",
+	"postCreateCommand": "npm install -g npm-check-updates",
+	"postAttachCommand": {
+		"server": "npm run dev"
+	},
+	"customizations": {
+		"codespaces": {
+			"openFiles": ["README.md"]
+		}
+	},
+	"portsAttributes": {
+		"3000": {
+			"label": "Preview",
+			"onAutoForward": "openBrowserOnce"
+		}
+	},
+	"forwardPorts": [3000],
+	"extensions": [
+		"bradlc.vscode-tailwindcss",
+		"dotenv.dotenv-vscode",
+		"esbenp.prettier-vscode",
+		"rangav.vscode-thunder-client"
+	]
+}
